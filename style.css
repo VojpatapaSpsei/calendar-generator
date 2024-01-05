@@ -1,0 +1,104 @@
+*
+{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+body
+{
+   background-color: white;
+}
+
+header
+{
+   background-color: brown;
+   min-height: 80px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header .logo
+{
+   font-size: 50px;
+   font-family:'Courier New', Courier, monospace;
+   font-weight: 900;
+   color:white;
+}
+
+main .inputs form
+{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+}
+
+main .inputs form input:first-child
+{
+   margin-top: 25px;  
+}
+
+main .inputs form input
+{
+   margin: auto;
+   margin-bottom: 25px;
+   width: 90%;
+   height: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   border-radius: 10px;
+   text-align: center;
+   font-size: 25px;
+   font-weight:500;
+   border: 1px solid black;
+   transition: 500ms;
+}
+
+main .inputs form input[type=button]:hover
+{
+   cursor: pointer;
+   background-color: brown;
+   color:white;
+   border: none;
+   box-shadow:0px 0px 20px red ;
+}
+
+main .calendar
+{
+   display: flex;
+   justify-content: center;
+}
+
+main .calendar table
+{
+   width: 90%;
+   margin: auto;
+   border: 1px solid black;
+   text-align: center;
+   border-collapse: collapse;
+   table-layout: fixed;
+   font-family: 'Courier New', Courier, monospace;
+   background-color: brown;
+   color:white;
+   transition: 500ms;
+}
+
+main .calendar table td:hover
+{
+   background-color: rgb(42, 165, 140);
+   color:white;
+}
+
+main .calendar table td, th
+{
+   transition: 300ms;
+   height: 90px;
+   border: 1px solid black;
+   width: 5%px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow:ellipsis;
+}
